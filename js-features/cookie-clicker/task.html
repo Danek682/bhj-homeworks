@@ -21,14 +21,30 @@
         <div class="card">
             <div class="clicker">
                 <div class="clicker__status">
-                    Всего кликов <span id="clicker__counter">0</span>
+                    Всего кликов
+                    <span id="clicker__counter"> 0 </span>
                 </div>
-                <img 
-                    src="https://i.postimg.cc/T1bWdf2y/1024px-Pepperidge-Farm-Nantucket-Cookie.jpg" 
+                <img
+                    src="https://i.postimg.cc/T1bWdf2y/1024px-Pepperidge-Farm-Nantucket-Cookie.jpg"
                     alt=""
                     id="cookie"
                     class="clicker__cookie"
-                    width="200">
+                    width="200"
+                />
+                <script>
+                    let number = 0 
+                    let cookie = document.getElementById("cookie") 
+                    let counter = document.getElementById("clicker__counter") 
+                    cookie.onclick = function() {
+                        number++
+                        counter.textContent = number
+                        if (cookie.width === 200) {
+                            cookie.width = 150
+                        } else {
+                            cookie.width = 200
+                        }
+                    }
+                </script>
             </div>
         </div>
     </main>    
