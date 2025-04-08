@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="/js-features/cookie-clicker/task.js">
     <title>Игра-кликер</title>
 </head>
 <body>
@@ -31,20 +32,6 @@
                     class="clicker__cookie"
                     width="200"
                 />
-                <script>
-                    let number = 0 
-                    let cookie = document.getElementById("cookie") 
-                    let counter = document.getElementById("clicker__counter") 
-                    cookie.onclick = function() {
-                        number++
-                        counter.textContent = number
-                        if (cookie.width === 200) {
-                            cookie.width = 150
-                        } else {
-                            cookie.width = 200
-                        }
-                    }
-                </script>
             </div>
         </div>
     </main>    
