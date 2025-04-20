@@ -7,6 +7,7 @@ for(let i = 0; i < rotatorContainer.length; i++){
             cases[j].classList.remove('rotator__case_active')
             if(count === j){
             cases[j].classList.add('rotator__case_active') 
+            cases[j].style.color = cases[j].getAttribute('data-color')
             }
         }
         count++
