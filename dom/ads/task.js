@@ -17,3 +17,12 @@ for(let i = 0; i < rotatorContainer.length; i++){
     }
     setInterval(rotation,1000)
 }
+
+const checkboxes = document.querySelectorAll('.sub-checkbox ');
+const checkmain = document.getElementById('main-checkbox');
+checkmain.addEventListener('click',() => {
+        for (let i = 0; i < checkboxes.length; i++){
+            checkboxes[i].checked = true;
+        }
+    }
+)
