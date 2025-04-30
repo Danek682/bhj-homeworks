@@ -1,8 +1,9 @@
 let input = document.querySelector(".tasks__input");
 let taskList = document.querySelector(".tasks__list");
+let button = document.querySelector(".tasks__add");
 
-input.addEventListener("keydown", function (event) {
-    if (event.key === "Enter" && input.value.trim() !== "") {
+button.addEventListener("click", function (event) {
+    if (input.value.trim() !== "") {
         event.preventDefault();
 
         let div = document.createElement("div");
@@ -13,7 +14,7 @@ input.addEventListener("keydown", function (event) {
     `;
         taskList.appendChild(div);
         input.value = "";
-        let deleteTask = document.querySelector(".task__remove");
+        let deleteTask = div.querySelector(".task__remove");
         deleteTask.addEventListener("click", (e) => {
             e.preventDefault();
             div.remove();
