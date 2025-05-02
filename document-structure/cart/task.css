@@ -43,6 +43,7 @@ body {
 
 .product__quantity-title {
   text-transform: uppercase;
+  text-align: center;
 }
 
 .product__quantity-controls {
@@ -80,6 +81,7 @@ body {
   color: #fff;
   border-radius: 5px;
   cursor: pointer;
+  user-select: none
 }
 
 .product__add:hover {
@@ -88,4 +90,22 @@ body {
 
 .product-shadow {
   position: absolute;
+}
+
+.product__selector{
+  display: flex;
+}
+
+.product__remove{
+  background-color: #f36d6d;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  user-select: none
+}
+
+.product__remove:hover {
+  opacity: 0.8;
 }
