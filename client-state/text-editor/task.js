@@ -5,8 +5,5 @@ editor.addEventListener('input', () => {
 })
 
 window.addEventListener("DOMContentLoaded", () => {
-   let savedValue = localStorage.getItem('name')
-   if(savedValue) {
-      editor.value = savedValue
-   }
+   editor.value = localStorage.getItem('name')
 })
